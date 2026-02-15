@@ -96,22 +96,27 @@ The MongoDB schema is designed for analytics scalability and AI-driven recommend
 
 # 📂 Project Structure (Laravel Version)
 
-
 ## Project Structure
+
+```
 study2gether-laravel/
 ├── app/
-│ ├── Models/
-│ ├── Http/
-│ └── Providers/
+│   ├── Models/
+│   ├── Http/
+│   └── Providers/
 ├── config/
 ├── routes/
 ├── resources/
+├── public/
+├── database/
+├── storage/
 ├── composer.json
 ├── .env
 └── README.md
 ```
 
 ---
+
 
 # 🗃 MongoDB Collections
 
