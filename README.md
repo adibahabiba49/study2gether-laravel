@@ -1,59 +1,170 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Study2Gether – Intelligent Class Test & Analytics Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Study2Gether is a cloud-based Class Test Management and Student Performance Analytics system designed to streamline assessment workflows and enable data-driven academic insights.
 
-## About Laravel
+Originally developed using Core PHP and MongoDB, the system has been refactored to Laravel 12 with MongoDB Atlas integration for scalable cloud deployment.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# 🚀 Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Backend
+- Laravel 12 (Refactored Architecture)
+- Core PHP (Initial Version)
+- RESTful Structure
+- Role-Based Authentication
 
-## Learning Laravel
+### Database
+- MongoDB Atlas (Cloud-hosted NoSQL Database)
+- MongoDB Laravel Eloquent Driver
+- Secure TLS-based connection
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### Frontend
+- HTML
+- CSS
+- Blade Templates (Laravel Version)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Dev Tools
+- Composer
+- Git & GitHub
+- MongoDB Compass
+- PHP 8.5 (NTS x64)
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# ✨ Core Features
 
-### Premium Partners
+## 👤 Admin Panel
+- Secure login
+- Manage students and teachers
+- Create subjects / courses
+- Define chapters and topics
+- Schedule Class Tests
+- Dashboard overview
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 👨‍🏫 Teacher Panel
+- Create MCQ and Written Class Tests
+- Add questions with chapter/topic tagging
+- Automatic MCQ evaluation
+- Manual evaluation for written tests
+- View topic-wise & chapter-wise weakness
+- Student performance tracking
 
-## Contributing
+## 👩‍🎓 Student Panel
+- View CT schedule
+- Attend timed CTs (auto-submit supported)
+- Review answers & results
+- Topic-wise performance analysis
+- CT-to-CT progress tracking
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+# 🧠 Analytics Architecture
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+The system is structured to support:
 
-## Security Vulnerabilities
+- Accuracy per topic
+- Speed vs accuracy analysis
+- Repeated mistake detection
+- Chapter-wise weakness identification
+- Study habit tracking (future enhancement)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+The MongoDB schema is designed for analytics scalability and AI-driven recommendation expansion.
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# 🏗 Architecture Evolution
+
+## Phase 1 – Core PHP + Local MongoDB
+- Multi-role system
+- MCQ + Written evaluation
+- Manual analytics
+
+## Phase 2 – Laravel 12 Refactor
+- MVC architecture
+- Environment-based configuration
+- Clean routing & middleware
+- Composer-managed dependencies
+
+## Phase 3 – Cloud Migration
+- MongoDB Atlas integration
+- Secure IP-based access control
+- TLS connection
+- Cloud-ready configuration
+
+---
+
+# 📂 Project Structure (Laravel Version)
+
+
+## Project Structure
+study2gether-laravel/
+├── app/
+│ ├── Models/
+│ ├── Http/
+│ └── Providers/
+├── config/
+├── routes/
+├── resources/
+├── composer.json
+├── .env
+└── README.md
+```
+
+---
+
+# 🗃 MongoDB Collections
+
+- users (admin, teacher, student roles unified)
+- courses
+- questions
+- class_tests
+- submissions
+- student_analytics
+- student_behavior
+
+---
+
+# 🔐 Security
+
+- Password hashing (bcrypt)
+- Role-based middleware protection
+- Session management
+- Environment-based secret management (.env)
+
+---
+
+# ⚙ Installation (Laravel Version)
+
+1. Clone repository
+2. Run:
+
+---
+
+# 🔮 Future Enhancements
+
+- AI-based personalized practice generation
+- Adaptive difficulty adjustment
+- Mood-based study suggestions
+- ML-driven performance prediction
+- Visual analytics dashboards
+- Mobile application integration
+
+---
+
+# 🎯 Project Goal
+
+To build a scalable, analytics-driven academic evaluation platform that bridges assessment management with intelligent learning insights.
+
+---
+
+# 📌 Status
+
+Core architecture successfully migrated to Laravel 12 with MongoDB Atlas.
+System ready for feature expansion and AI integration.
+
+---
+
+# 👩‍💻 Author
+
+Developed and architected by Adiba Habiba.
